@@ -59,8 +59,8 @@ header > p {
     color: var(--cor6);
     max-width: 500px;
     margin: auto;
-    margin-bottom: 20px;
     padding: auto 10px;
+    padding-bottom: 30px;
     text-shadow: 2px 2px 0px #00000080;
 }
 
