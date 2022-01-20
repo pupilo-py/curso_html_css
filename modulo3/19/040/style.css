@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+}
+
+#container {
+    height: 96vh;
+    background-color: red;
+    background-image: url(../034/imagens/target001.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 13px;
+}
+
+#conteudo {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: blue;
+    background-image: url(../034/imagens/target001.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
