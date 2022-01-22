@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-texto: 'Sriracha', cursive;
+    --cor-fundo-site: black;
+    --cor-fundo-imagem: white;
+    --cor-fundo-texto: #00000083;
+    --cor-texto: white;
+}
+
+* {
+    margin: 0;
+}
+
+header, footer {
+    font-family: var(--fonte-titulo);
+    background-color: var(--cor-fundo-site);
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+section p {
+    font-family: var(--fonte-texto);
+    margin: 10px;
+    width: 175px;
+}
+
+section.normal {
+    background-color: var(--cor-fundo-imagem);
+}
+
+section.imagem#joaninha {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+}
+
+section.imagem#carta {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+
+section.imagem p {
+    background-color: var(--cor-fundo-texto);
+    color: var(--cor-texto);
+}
