@@ -7,6 +7,7 @@
 :root {
     --fonte-titulo: 'Passion One', cursive;
     --fonte-texto: 'Sriracha', cursive;
+    --fonte-link: Verdana, Geneva, Tahoma, sans-serif;
     --cor-fundo-site: black;
     --cor-fundo-imagem: white;
     --cor-fundo-texto: #00000083;
@@ -17,34 +18,70 @@
     margin: 0;
 }
 
+header {
+    padding: 50px 0;
+}
+
 header, footer {
-    font-family: var(--fonte-titulo);
     background-color: var(--cor-fundo-site);
+    font-family: var(--fonte-link);
     color: var(--cor-texto);
     text-align: center;
 }
 
+header a, footer a {
+    color: var(--cor-texto);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+
+
+section {
+    padding: 50px;
+    padding-right: 0;
+}
+
 section p {
     font-family: var(--fonte-texto);
-    margin: 10px;
-    width: 175px;
+    line-height: 2em;
+    font-size: 3.5vw;
+    padding-bottom: 2em;
 }
 
 section.normal {
     background-color: var(--cor-fundo-imagem);
 }
 
-section.imagem#joaninha {
-    background-image: url(imagens/background001.jpg);
+section.imagem {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px #00000078;
 }
 
-section.imagem#carta {
+section.imagem#img1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section.imagem#img2 {
     background-image: url(imagens/background002.jpg);
-    background-size: cover;
 }
 
 section.imagem p {
+    display: inline-block;
     background-color: var(--cor-fundo-texto);
     color: var(--cor-texto);
+}
+
+footer {
+    padding: 10px;
 }
