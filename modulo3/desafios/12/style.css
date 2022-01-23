@@ -10,6 +10,7 @@
     --fonte-link: Verdana, Geneva, Tahoma, sans-serif;
     --cor-fundo-site: black;
     --cor-fundo-imagem: white;
+    --cor-sombra-imagem: #00000078;
     --cor-fundo-texto: #00000083;
     --cor-texto: white;
 }
@@ -29,30 +30,31 @@ header, footer {
     text-align: center;
 }
 
-header a, footer a {
-    color: var(--cor-texto);
-    font-weight: bold;
-    text-decoration: none;
-}
-
 header h1 {
     font-family: var(--fonte-titulo);
     font-variant: small-caps;
     font-size: 10vw;
 }
 
+header a, footer a {
+    color: var(--cor-texto);
+    font-weight: bold;
+    text-decoration: none;
+}
 
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
 
 section {
-    padding: 50px;
-    padding-right: 0;
+    padding: 10vh 0 10vh 30px;
 }
 
 section p {
     font-family: var(--fonte-texto);
     line-height: 2em;
     font-size: 3.5vw;
-    padding-bottom: 2em;
+    padding: 5px;
 }
 
 section.normal {
@@ -63,23 +65,24 @@ section.imagem {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 6px 6px 13px 0px #00000078;
+    box-shadow: inset 6px 6px 13px 0px var(--cor-sombra-imagem);
 }
 
 section.imagem#img1 {
-    background-image: url(imagens/background001.jpg);
+    background-image: url("imagens/background001.jpg");
     background-position: right center;
     
 }
 
 section.imagem#img2 {
-    background-image: url(imagens/background002.jpg);
+    background-image: url("imagens/background002.jpg");
 }
 
 section.imagem p {
     display: inline-block;
     background-color: var(--cor-fundo-texto);
     color: var(--cor-texto);
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
