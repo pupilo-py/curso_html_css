@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Cadastrador de Clientes</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastrador de Clientes</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Cliente: <input type="text" name="input-cliente" id="cliente"> <input type="button" value="Adicionar" onclick="adicionarCliente()"></p>
+
+            <select name="select-log" id="log" size="10"></select> <br>
+            <input type="button" value="Finalizar" onclick="analisarClientes()">
+            <input type="button" value="Limpar" onclick="limparClientes()">
+        </div>
+
+        <div id="res"></div>
+    </section>
+
+    <footer>
+        <p><strong><em><a href="https://github.com/pupilo-py" target="_blank" rel="noopener noreferrer external">@pupilo-py (João Victor)</a></em></strong></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
