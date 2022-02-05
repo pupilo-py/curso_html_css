@@ -4,8 +4,7 @@ function calcularTamanhoNome() {
 
     res.innerHTML = `Seu nome é <strong>${nome}</strong>, possui ${nome.length} letras. São elas: `
 
-    for (let c = 0; c < nome.length; c++) {
-        const letra = nome[c];
+    for (let letra of nome.toUpperCase()) {
         res.innerHTML += `<strong>${letra}</strong> `
     }
 }
