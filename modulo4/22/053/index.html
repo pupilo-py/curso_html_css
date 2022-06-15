@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança em Iframes</title>
+</head>
+<body>
+    <h1>Minha página principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iste quaerat autem odit omnis magnam vitae nulla eius dolore odio sunt assumenda similique quae beatae provident quas praesentium ducimus. Totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eveniet nostrum labore rerum a autem earum, impedit voluptatum ratione, magni voluptas optio vitae? Maiores, dolorum nulla aliquid at ipsum quia!</p>
+
+    <!--sandbox="sandbox" (restrição máxima)-->
+    <iframe src="form.html" style="border: 5px solid black;" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <p>[Seu navegador não é compatível com iframes!]</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi vitae iste sint excepturi quos architecto debitis dolorum, voluptas, tempore odit eum unde dignissimos itaque inventore quae tenetur atque ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos recusandae voluptates vel doloremque repellat perferendis numquam repudiandae assumenda eius culpa delectus, nihil dicta fuga minus cumque in magni placeat.</p>
+</body>
+</html>
