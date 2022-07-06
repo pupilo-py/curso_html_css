@@ -24,6 +24,7 @@ img {
 a {
     display: block;
     background-color: var(--link-color);
+    margin-top: -4px;
     padding: 20px;
     color: white;
     text-align: center;

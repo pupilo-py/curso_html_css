@@ -1,17 +1,15 @@
 @charset "UTF-8";
 
-:root {
-    --background: url(../imagens/fundo-madeira.jpg);
-    --phone: url(../imagens/frame-iphone.png);
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-image: var(--background);
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -20,32 +18,40 @@ main {
     height: 100vh;
 }
 
-section#phone {
+section#telefone {
     position: absolute;
-    background-image: var(--phone);
-    background-repeat: no-repeat;
     width: 311px;
     height: 627px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-image: url(../imagens/frame-iphone.png);
+    background-repeat: no-repeat;
 }
 
-section#phone iframe#screen {
+section#telefone iframe#tela {
     position: relative;
-    width: 267px;
-    height: 471px;
-    top: 80px;
-    left: 22px;
+    top: 83px;
+    left: 25px;
+    height: 466px;
+    width: 262px;
 }
 
-section#social-media {
+section#redes-sociais {
     text-align: right;
 }
 
-
-img {
+section#redes-sociais a.botao-social img {
+    width: 50px;
     margin: 10px;
     border-radius: 50%;
-    width: 50px;
+    box-shadow: 2px 2px 5px #00000066;
+    box-sizing: border-box;
+}
+
+section#redes-sociais a.botao-social img:hover {
+    border: 2px solid #ffffff99;
+    box-shadow: 4px 4px 10px #00000066;
+    transform: translate(-5%, -5%);
+    transition: ease-in-out 0.2s;
 }
