@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <script defer>
+        function somar(pc1, pc2) {
+            pc1 = Number(window.document.querySelector("input#ipc1").value);
+            pc2 = Number(window.document.querySelector("input#ipc2").value);
+            soma = pc1 + pc2
+            window.document.querySelector("output#res").innerHTML = `<b>${soma}</b>`;
+        };
+
+        function alterarNumero(num) {
+            num = window.document.querySelector("input#inum").value;
+            out = window.document.querySelector("output#num").innerHTML = `<b>${num}</b>`;
+        };
+
+        function calcularIdade(anoNasc) {
+            anoNasc = Number(window.document.querySelector("input#iano").value);
+            anoAtual = Number(new Date().getFullYear());
+            idade = anoAtual - anoNasc;
+            window.document.querySelector("output#iidade").innerHTML = `<b>${idade}</b>`;
+        };
+    </script>
+
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+    <form action="" method="post">
+        <p>
+            <label for="ipc1">Parcela 1: </label>
+            <input type="number" name="pc1" id="ipc1" oninput="somar()">
+        </p>
+
+        <p>
+            <label for="ipc2">Parcela 2: </label>
+            <input type="number" name="pc2" id="ipc2" oninput="somar()">
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output id="res">resultado</output>
+        </p>
+
+        <p>
+            <label for="inum">Número: </label>
+            <input type="range" name="numero" id="inum" min="0" max="5" value="1" oninput="alterarNumero()">
+            <output id="num">1</output>
+        </p>
+
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="2000" max="2022" oninput="calcularIdade()">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

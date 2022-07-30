@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected disabled>Escolha um estado</option>
+
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="AC">Acre</option>
+                    <option value="RR">Roraima</option>
+                    <option value="PA">Pará</option>
+                </optgroup>
+
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+
+            <datalist id="lstprof" >
+                <optgroup label="Diretoria">
+                    <option value="ADM">Administador</option>
+                    <option value="CONT">Contador</option>
+                </optgroup>
+
+                <optgroup label="Funcionários">
+                    <option value="DEV">Desenvolvedor</option>
+                </optgroup>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br><br>
+            <textarea name="mensagem" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem..."></textarea>
+        </p>
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
