@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: lightgrey;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+header menu ul {
+    list-style-type: none;
+    background-color: grey;
+}
+header menu ul li {
+    display: inline-block;
+    color: white;
+    background-color: #000000ac;
+    padding: 10px;
+}
+
+main {
+    padding-top: 10px;
+}
+
+main article {
+    max-width: 600px;
+    text-align: justify;
+    display: block;
+    margin: auto;
+}
+
+main article > h2 {
+    text-align: center;
+}
