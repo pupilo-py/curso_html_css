@@ -1,0 +1,6 @@
+@charset "UTF-8";
+@import url(root.css);
+
+body {background-image: var(--phone);}
+
+img#phone {display: inline-block;}
