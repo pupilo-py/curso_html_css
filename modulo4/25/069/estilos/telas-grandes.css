@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > h1 {padding: 10px;}
+header > span#burguer {display: none;}
+header > menu {display: inline-block;}
+header > menu > ul {display: flex;}
+
+header > menu > ul > li > a {
+    border: none;
+    margin: 19px 5px 0px;
+    padding: 10px;
+}
