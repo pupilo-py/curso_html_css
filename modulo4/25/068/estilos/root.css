@@ -2,11 +2,12 @@
 
 :root {
     --fonte-principal: Arial, Helvetica, sans-serif;
+    --fonte-impressao:'Courier New', Courier, monospace;
     --cor-titulo: #ffffff80;
     --cor-sombra: #00000080;
+    --cor-impressao: #80808040;
     --phone: url(../imagens/back-phone.jpg);
     --tablet: url(../imagens/back-tablet.jpg);
     --pc: url(../imagens/back-pc.jpg);
     --tv: url(../imagens/back-tv.jpg);
-    --print: url(../imagens/back-print.jpg);
 }
