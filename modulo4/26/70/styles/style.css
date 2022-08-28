@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url(root.css);
+
+* {
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, main {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--cor-background);
+}
+
+main {
+    position: relative;
+}
+
+main > section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 515px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #00000080;
+}
+
+main > section#login > div#imagem {
+    background: var(--cor-background) url(../images/metal.jpg) left bottom no-repeat;
+    background-size: cover;
+    height: 200px;
+    max-width: 100%;
+}
+
+main > section#login > div#formulario {
+    padding: 10px 5px 5px 5px;
+}
+
+main > section#login > div#formulario > h1 {
+    text-align: center;
+}
+
+main > section#login > div#formulario > p {
+    font-size: 0.8em;
+    text-align: justify;
+    margin: 10px 5px;
+}
+
+main > section#login > div#formulario > form > div.campo {
+    display: flex;
+    background-color: var(--cor-background);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+main > section#login > div#formulario > form > div.campo > label.material-icons {
+    margin: 5px 5px 5px 0;
+}
+
+main > section#login > div#formulario > form > div.campo > input {
+    background-color: var(--cor-input);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+main > section#login > div#formulario > form > div.campo > input:focus {
+    background-color: white;
+}
+
+main > section#login > div#formulario > form .botao {
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    width: calc(100% - 10px);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+main > section#login > div#formulario > form > input.botao {
+    background-color: var(--cor-submit);
+    color: white;
+    border: 1px solid var(--cor-submit);
+}
+
+main > section#login > div#formulario > form > input.botao:hover {
+    background-color: var(--cor-a);
+    border: 1px solid var(--cor-a);
+    cursor: pointer;
+}
+
+main > section#login > div#formulario > form > a.botao {
+    background-color: transparent;
+    color: var(--cor-a);
+    border: 1px solid var(--cor-a);
+    text-decoration: none;
+}
+
+main > section#login > div#formulario > form > a.botao:hover {
+    background-color: var(--cor-a-hover);
+}
+
+main > section#login > div#formulario > form > a.botao > span.material-icons {
+    font-size: 0.8em;
+}
