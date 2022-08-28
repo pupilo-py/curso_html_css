@@ -14,7 +14,7 @@ html, body, main {
 }
 
 body {
-    background-color: var(--cor-background);
+    background-color: var(--cor-background-1);
 }
 
 main {
@@ -31,10 +31,11 @@ main > section#login {
     width: 250px;
     height: 515px;
     box-shadow: 0px 0px 10px #00000080;
+    transition: width 0.3s, height 0.3s ease;
 }
 
 main > section#login > div#imagem {
-    background: var(--cor-background) url(../images/metal.jpg) left bottom no-repeat;
+    background: var(--cor-background-1) url(../images/metal.jpg) left bottom no-repeat;
     background-size: cover;
     height: 200px;
     max-width: 100%;
@@ -57,7 +58,7 @@ main > section#login > div#formulario > p {
 
 main > section#login > div#formulario > form > div.campo {
     display: flex;
-    background-color: var(--cor-background);
+    background-color: var(--cor-background-1);
     color: white;
     padding: 10px;
     margin: 5px;

@@ -4,7 +4,8 @@
 
 :root {
     --fonte-principal: Ubuntu, sans-serif;
-    --cor-background: #5f2c82;
+    --cor-background-1: #5f2c82;
+    --cor-background-2: #49a09d;
     --cor-input: #94CFCD;
     --cor-submit: #53aaa7;
     --cor-a: #2d6462;
