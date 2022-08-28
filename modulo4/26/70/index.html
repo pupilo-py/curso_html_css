@@ -21,12 +21,12 @@
                 <form action="login.php" method="post">
                     <div class="campo">
                         <label for="idEmail" class="material-icons">person</label>
-                        <input type="email" name="nameEmail" id="idEmail" placeholder="seu e-mail">
+                        <input type="email" name="nameEmail" id="idEmail" placeholder="seu e-mail" autocomplete="email" required>
                     </div>
                     
                     <div class="campo">
                         <label for="idPassword" class="material-icons">vpn_key</label>
-                        <input type="password" name="namePassword" id="idPassword" placeholder="sua senha">
+                        <input type="password" name="namePassword" id="idPassword" placeholder="sua senha" autocomplete="current-password" minlength="8" required>
                     </div>
 
                     <input type="submit" value="Entrar" class="botao">
